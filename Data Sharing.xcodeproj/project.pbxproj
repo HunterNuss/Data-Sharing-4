@@ -11,7 +11,6 @@
 		2E77B50C20051E5E00973BC0 /* CurrentUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77B50B20051E5E00973BC0 /* CurrentUsers.swift */; };
 		2E77B50F200520F500973BC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E77B50E200520F500973BC0 /* User.swift */; };
 		2ED7AC951FBDE7CE00E63E82 /* ClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7AC941FBDE7CE00E63E82 /* ClassesViewController.swift */; };
-		2ED7AC971FBDE7F400E63E82 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7AC961FBDE7F400E63E82 /* FriendsViewController.swift */; };
 		2ED7AC991FBDE80800E63E82 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED7AC981FBDE80800E63E82 /* SettingsViewController.swift */; };
 		2ED92D8F1FD996E400513BB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2ED92D8E1FD9891800513BB5 /* GoogleService-Info.plist */; };
 		564ABA630425275D3E3B9C71 /* Pods_Data_Sharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F954FE1B5FE149E6B4DE5FF4 /* Pods_Data_Sharing.framework */; };
@@ -49,7 +48,6 @@
 		2E77B50B20051E5E00973BC0 /* CurrentUsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUsers.swift; sourceTree = "<group>"; };
 		2E77B50E200520F500973BC0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2ED7AC941FBDE7CE00E63E82 /* ClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesViewController.swift; sourceTree = "<group>"; };
-		2ED7AC961FBDE7F400E63E82 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 		2ED7AC981FBDE80800E63E82 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		2ED92D8E1FD9891800513BB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Data Sharing/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		3BD708B7512581CC4C162365 /* Pods-Data SharingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data SharingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Data SharingTests/Pods-Data SharingTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				2E688A381FCDAA41003CE905 /* LoginViewController.swift */,
 				2E77B50B20051E5E00973BC0 /* CurrentUsers.swift */,
 				2ED7AC941FBDE7CE00E63E82 /* ClassesViewController.swift */,
-				2ED7AC961FBDE7F400E63E82 /* FriendsViewController.swift */,
 				2ED7AC981FBDE80800E63E82 /* SettingsViewController.swift */,
 			);
 			path = ViewController;
@@ -503,7 +500,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E688A391FCDAA41003CE905 /* LoginViewController.swift in Sources */,
-				2ED7AC971FBDE7F400E63E82 /* FriendsViewController.swift in Sources */,
 				8304E4E51FBC8A4C00A50503 /* ViewController.swift in Sources */,
 				2E77B50C20051E5E00973BC0 /* CurrentUsers.swift in Sources */,
 				2E77B50F200520F500973BC0 /* User.swift in Sources */,
