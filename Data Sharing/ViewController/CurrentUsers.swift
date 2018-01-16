@@ -22,19 +22,27 @@ class CurrentUsers: UITableViewController {
     
     func fetchUser() {
         Database.database().reference().child("users").observe(.childAdded, with: { (snapshot) in
-            if let dictionary = snapshot.value as? [String: AnyObject] {
-                let user = User()
-                user.setValuesForKeys(dictionary)
+    if let dictionary = snapshot.value as? [String: AnyObject] {
+                let user = User(dictionary: dictionary)
                 self.users.append(user)
+                
+                //this will crash because of background thread, so lets use dispatch_async to fix
                 DispatchQueue.main.async(execute: {
                     self.tableView.reloadData()
                 })
+            }
+//            if let dictionary = snapshot.value as? [String: AnyObject] {
+//                let user = User(dictionary: dictionary)
+//                user.setValuesForKeys(dictionary)
+//                self.users.append(user)
+//                DispatchQueue.main.async(execute: {
+//                    self.tableView.reloadData()
+//                })
 
                 //        Safe way to prevent crash
                 //        user.name = dictionary["name"]
                 //        user.email = dictionary["email"]
-            }
-            print("User Found")
+//            }
             print(snapshot)
         }, withCancel: nil)
     }

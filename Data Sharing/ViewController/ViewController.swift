@@ -23,10 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         menuConstraint.constant = -180
         
-        if Auth.auth().currentUser?.uid == nil {
-            perform(#selector(handleLogout), with: nil, afterDelay: 0)
-        }
-
+        
         checkIfUserIsLoggedIn()
     }
 
@@ -77,14 +74,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             let uid = Auth.auth().currentUser?.uid
             Database.database().reference().child("users").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
-                
+
                 if let dictionary = snapshot.value as? [String: AnyObject] {
                     self.navigationItem.title = dictionary["name"] as? String
                 }
             }, withCancel: nil)
         }
     }
-    
+
     @objc func handleLogout() {
         do {
             try Auth.auth().signOut()
@@ -92,7 +89,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             print(logoutError)
     }
 
+//        let loginController = LoginViewController()
+//        present(loginController, animated: true, completion: nil)
+
     }
+    
     
 }
     
