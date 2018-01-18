@@ -23,6 +23,9 @@
 		8304E5031FBC8A4C00A50503 /* Data_SharingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8304E5021FBC8A4C00A50503 /* Data_SharingUITests.swift */; };
 		8490665F5BE459F3A08580E5 /* Pods_Data_SharingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C05AABBE62EDEB23C75DA7C /* Pods_Data_SharingUITests.framework */; };
 		AA0DFB44C5F8393AE356888A /* Pods_Data_SharingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808EEFF7B0A3E02C4DB2F6C3 /* Pods_Data_SharingTests.framework */; };
+		E9C263FB201032900065076E /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C263FA201032900065076E /* Login.swift */; };
+		E9C263FD201033260065076E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C263FC201033260065076E /* Home.swift */; };
+		E9C263FF201034EF0065076E /* Members.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C263FE201034EF0065076E /* Members.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		B5D80BE2F13899B66995D9F8 /* Pods-Data SharingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data SharingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Data SharingTests/Pods-Data SharingTests.release.xcconfig"; sourceTree = "<group>"; };
 		B643203F1CF8D1D110B03EA4 /* Pods-Data Sharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data Sharing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Data Sharing/Pods-Data Sharing.debug.xcconfig"; sourceTree = "<group>"; };
 		E83F59C695C49401BC64881D /* Pods-Data Sharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data Sharing.release.xcconfig"; path = "Pods/Target Support Files/Pods-Data Sharing/Pods-Data Sharing.release.xcconfig"; sourceTree = "<group>"; };
+		E9C263FA201032900065076E /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E9C263FC201033260065076E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E9C263FE201034EF0065076E /* Members.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Members.swift; sourceTree = "<group>"; };
 		F7C44EC5A97ADEBB833DA594 /* Pods-Data SharingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data SharingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Data SharingUITests/Pods-Data SharingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F954FE1B5FE149E6B4DE5FF4 /* Pods_Data_Sharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Data_Sharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,7 +110,6 @@
 		2E688A351FCDA999003CE905 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2E77B50D20051FCE00973BC0 /* New Group */,
 				8304E4E41FBC8A4C00A50503 /* ViewController.swift */,
 				2E688A381FCDAA41003CE905 /* LoginViewController.swift */,
 				2E77B50B20051E5E00973BC0 /* CurrentUsers.swift */,
@@ -170,9 +175,13 @@
 		8304E4E11FBC8A4C00A50503 /* Data Sharing */ = {
 			isa = PBXGroup;
 			children = (
+				2E77B50D20051FCE00973BC0 /* New Group */,
 				2E688A351FCDA999003CE905 /* ViewController */,
 				8304E4E21FBC8A4C00A50503 /* AppDelegate.swift */,
 				8304E4E61FBC8A4C00A50503 /* Main.storyboard */,
+				E9C263FA201032900065076E /* Login.swift */,
+				E9C263FC201033260065076E /* Home.swift */,
+				E9C263FE201034EF0065076E /* Members.swift */,
 				8304E4E91FBC8A4C00A50503 /* Assets.xcassets */,
 				2ED92D8E1FD9891800513BB5 /* GoogleService-Info.plist */,
 				8304E4EB1FBC8A4C00A50503 /* LaunchScreen.storyboard */,
@@ -500,12 +509,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E688A391FCDAA41003CE905 /* LoginViewController.swift in Sources */,
+				E9C263FF201034EF0065076E /* Members.swift in Sources */,
 				8304E4E51FBC8A4C00A50503 /* ViewController.swift in Sources */,
 				2E77B50C20051E5E00973BC0 /* CurrentUsers.swift in Sources */,
 				2E77B50F200520F500973BC0 /* User.swift in Sources */,
+				E9C263FD201033260065076E /* Home.swift in Sources */,
 				2ED7AC951FBDE7CE00E63E82 /* ClassesViewController.swift in Sources */,
 				2ED7AC991FBDE80800E63E82 /* SettingsViewController.swift in Sources */,
 				8304E4E31FBC8A4C00A50503 /* AppDelegate.swift in Sources */,
+				E9C263FB201032900065076E /* Login.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
